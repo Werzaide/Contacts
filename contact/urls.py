@@ -14,8 +14,7 @@ urlpatterns = [
     path('contact/create/', views.create, name='create'),
 
     # user
-    #path('user/<int:contact_id>/detail/', views.contact, name='contact'),
-    #path('user/<int:contact_id>/update/', views.contact, name='contact'),
-    #path('user/<int:contact_id>/delete/', views.contact, name='contact'),
     path('user/create/', views.register, name='register'),
+    path('user/login/', views.login_view, name='login'),
+    path('user/logout/', views.logout_view, name='logout'),
 ]
